@@ -1,18 +1,27 @@
-var words = [
-    "horse",
-    "falcon",
-    "monkey",
-    "goose",
-    "hamster",
-    "tortoise",
-];
+document.addEventListener('keydown', newWord);
 
-var word = word[Math.floor(Math.random() * words.length)];
+function newWord()
+{
+    var words = [
+        "horse",
+        "falcon",
+        "monkey",
+        "goose",
+        "hamster",
+        "tortoise",
+    ];
+    
+    var word = words[Math.floor(Math.random() * words.length)];
+    
+    var answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+    }
+    
+    var result = answerArray.join(' ');
 
-var answerArray = [];
-for (var i = 0; i < word.length; i++) {
-    answerArray[i] = "_"
+    document.getElementById('currentWord').innerHTML = result;
 }
-var remainingLetters = word.length
+
 
 
