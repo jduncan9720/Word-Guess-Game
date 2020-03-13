@@ -97,7 +97,7 @@ function loseLife() {
 
 //Win the game and show a picture
 function winGame() {
-    document.getElementById('currentWord').innerHTML = "YOU WIN!..PLAY AGAIN";
+    document.getElementById('currentWord').innerHTML = "YOU WIN!..PLAY AGAIN?";
     wins++;
     document.getElementById('winsTotal').innerHTML = wins;
     newSetup = "true";
