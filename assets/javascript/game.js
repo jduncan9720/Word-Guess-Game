@@ -21,12 +21,15 @@ document.onkeyup = function newWord(event)
     else{
         //Create an array of words to eventually pick a word
         var words = [
-            "horse",
-            "falcon",
-            "monkey",
-            "goose",
-            "hamster",
-            "tortoise"
+            "stark",
+            "martell",
+            "tyrell",
+            "greyjoy",
+            "baratheon",
+            "arryn",
+            "lannister",
+            "tully",
+            "targaryen"
         ];
         
         //Pick a random word from the array above
@@ -103,13 +106,31 @@ function winGame() {
     newSetup = "true";
     
     //Find the associated picture with the win.
-    if (word == "goose") {
-        document.getElementById("image").src = "assets/images/goose.jpg";
+    if (word == "stark") {
+        document.getElementById("image").src = "assets/images/stark.jpg";
     }
-    else if(word == "horse"){
-        document.getElementById("image").src = "assets/images/goose.jpg";
+    else if(word == "martell"){
+        document.getElementById("image").src = "assets/images/martell.jpg";
     }
-    else if(word == "falcon"){
-        document.getElementById("image").src = "assets/images/goose.jpg";
+    else if(word == "tyrell"){
+        document.getElementById("image").src = "assets/images/tyrell.jpg";
+    }
+    else if(word == "greyjoy"){
+        document.getElementById("image").src = "assets/images/greyjoy.jpg";
+    }
+    else if(word == "baratheon"){
+        document.getElementById("image").src = "assets/images/baratheon.jpg";
+    }
+    else if(word == "arryn"){
+        document.getElementById("image").src = "assets/images/arryn.jpg";
+    }
+    else if(word == "lannister"){
+        document.getElementById("image").src = "assets/images/lannister.jpg";
+    }
+    else if(word == "tully"){
+        document.getElementById("image").src = "assets/images/tully.jpg";
+    }
+    else if(word == "targaryen"){
+        document.getElementById("image").src = "assets/images/targaryen.jpg";
     }
 }
